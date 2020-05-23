@@ -8,7 +8,31 @@ li.list-group-item {
 a.nav-link.horizontal-group-item {
     padding: 8px 8px 8px 0px;
 }
-canvas {
-    background-color: black;
-    padding: 0 !important;
+.rounded-circle {
+    display: inline-block;
+    padding: 0;
+    line-height: 150px;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+a.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
+a.nav-link{
+    border-bottom: 2px solid #ffffff;
+}
+
+a.nav-link:hover {
+    border-bottom: 2px solid #000;  
+
+}
+.jumboBackgroundImg {
+    background-image: url("../img/jumbobg.jpg");
+    background-size: cover;
+}
+#aboutMe{
+    font-weight: 600;
 }
