@@ -1,2 +1,2 @@
 # portfolio
-My bootcamp portfolio
+My bootstrap portfolio
