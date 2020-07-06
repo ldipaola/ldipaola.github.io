@@ -36,3 +36,9 @@ a.nav-link:hover {
 #aboutMe{
     font-weight: 600;
 }
+
+@media only screen and (max-width: 576px) {
+    main.container {
+      margin-bottom: 3rem;
+    }
+  }
