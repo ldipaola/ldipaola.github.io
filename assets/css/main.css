@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Kreon', serif;
     min-height: 100vh;
 }
 li.list-group-item {
@@ -17,7 +17,7 @@ a.nav-link.horizontal-group-item {
     margin-right: 10px;
 }
 a.navbar-brand {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Kreon', serif;
     letter-spacing: 0.1em;
     font-weight: 400;
 }
