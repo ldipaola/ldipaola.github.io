@@ -37,14 +37,18 @@ a.nav-link:hover {
     font-weight: 600;
 }
 .portfolio-main {
-    margin-bottom: 2.5em;
+    margin-bottom: 5em;
 }
 
 .portfolio {
-    margin: 1em 0 0em 0;
+    margin: 0em 0 0em 0;
     width: 500px;
     height: 300px;
     transition: width 1s, height 1.5s;
+  }
+
+  .work-header {
+    margin-bottom: 1em;
   }
   
   .portfolio:hover {
