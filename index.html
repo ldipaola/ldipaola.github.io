@@ -1,82 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
+	<title>Portfolio website</title>
+	<meta name="author" content="Amit Bajracharya">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/ce4c6ae522.js" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.js"></script>
+
+	
+
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/fontawesome/css/font-awesome.css">
+	
+
+	<link rel="stylesheet" href="assets/gridloading/css/component.css">
+	<link rel="stylesheet" href="assets/animate.css" >
+	<link rel="stylesheet" href="style.css">
+
+
+	
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-5 bg-white rounded">
-    <div class="container">
-      <a class="navbar-brand navbar-text" href="index.html">Lucas Di Paola</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item navbar-text"><a class="nav-link active" href="index.html">Home <span
-                class="sr-only">(current)</span></a></li>
-          <li class="nav-item navbar-text"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-          <li class="nav-item navbar-text"><a class="nav-link" href="contact.html">Contact</a></li>
-          <ul class="list-group list-group-horizontal-sm navbar-text">
-            <li class="nav-item list-group-item border-0"><a class="nav-link horizontal-group-item"
-                href="https://codepen.io/Lukey88/pens/public" target="_blank"><i class="fab fa-codepen"></i></a></li>
-            <li class="nav-item list-group-item border-0"><a class="nav-link horizontal-group-item"
-                href="https://github.com/ldipaola" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li class="nav-item list-group-item border-0"><a class="nav-link horizontal-group-item"
-                href="https://linkedin.com/in/lucas-d-777830160" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </li>
-          </ul>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <main class="container">
-    <div class="jumbotron jumboBackgroundImg shadow">
-      <section class="row">
-        <header class="col-sm-12">
-          <h2><strong>About Me</strong></h2>
-        </header>
-      </section>
-      <article class="row">
-        <section class="col-sm-12">
-            <img src="assets/img/pic.jpg" class="avatar img-fluid shadow bg-white z-depth-2  float-left">
-              <p id="aboutMe">Hi, my name is Lucas, I
-              like to connect the dots and find solutions to solve problems, passionate about coding and all things tech
-              related. In my spare time you'll find me out casting a line or hitting the local mountain bike trails.
-            </p>
-        </section>
-      </article>
-    </div>
 
-  </main>
+<!-- header -->
+<div id="top" class="header-bg fullpage">
+<div class="header fullpage">
+	<div class="container">
+		<div class="absolute-center">
+		<div class="row">
+			<div class="col-sm-7">
+				<h1 class="info animated fadeInDown"><a href="" class="logo">Hi,<br>I'm <u>Lucas Di Paola</u></a><br><b>I'm a Full Stack Web Developer</h1>
+				<a href="#work" class="btn scroll animated bounceInUp">View My Work</a><a href="#contact" class="btn scroll animated bounceInDown">Contact</a>
+			</div>
+			<div class="col-sm-4 col-sm-offset-1">
+				<div class="connect-icon">
+						<div class="prof-links clearfix animated bounceInUp">
+						<a href="https://www.linkedin.com/in/lucas-d-777830160/"><img alt="portfolio" src="images/linked.png" height="48"></a>
+						<a href="https://github.com/ldipaola"><img alt="portfolio" src="images/github.png" height="48"></a>						
+						<a href="https://codepen.io/Lukey88"><img alt="portfolio" src="images/codepen.png" height="48"></a>
+						</div>
+						<br>
+						<!-- <div class="social  clearfix  animated bounceInDown">
+						<a href="#"><img alt="portfolio" src="images/facebook.png" width="32"></a>
+						<a href="#"><img alt="portfolio" src="images/twitter.png"  width="32"></a>				
+						<a href="#"><img alt="portfolio" src="images/instagram.png"  width="32"></a>
+						<a href="#"><img alt="portfolio" src="images/pinterest.png" width="32"></a>
+						</div> -->
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- header -->
 
-  <footer class="navbar bg-dark text-white fixed-bottom">
-    <section class="container">
-      <div class="text-center navbar-text mr-auto">
-        <span>&copy;
-          <script>document.write(new Date().getFullYear());</script> Lucas Di Paola</span>
-      </div>
-    </section>
-  </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+<div class="content-body">
+	
+    
+
+<!-- works -->
+<div id="work" class="portfolio spacer">
+<div class="container">
+<h2 class="center">Work</h2>
+
+	<ul class="grid effect-2" id="grid">
+		<li><img alt="portfolio" src="images/grid-image/1.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span><span class="animated bounceIn" style="margin-top: 50px;"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View GitHub</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/2.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInDown"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/3.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInUp"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/4.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/5.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInDown"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/6.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/7.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/1.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/2.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInDown"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/3.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInUp"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/4.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/5.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInDown"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/3.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInUp"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/4.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/5.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInDown"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/6.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/2.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInDown"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/3.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInUp"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/4.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/5.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInDown"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+	</ul>
+</div>
+
+</div>
+<!-- works -->
+
+
+
+
+<!-- testimonials -->
+<div class="testimonials-bg">
+<div class="testimonials center spacer">
+	<div class="container">
+	<h2>Skills</h2>
+
+	<!-- <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+
+	<div class="carousel-inner">	
+			<div class="item active animated bounceInRight">
+			<span class="animated slideInLeft"><img alt="portfolio" src="images/testimonials/1.jpg" width="100" class="img-circle"></span>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+			<span>Canada</span>
+			</div>
+			<div class="item  animated bounceInRight">
+			<span class="animated slideInLeft"><img alt="portfolio" src="images/testimonials/1.jpg" width="100" class="img-circle"></span>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+			<span>Canada</span>
+			</div>
+			<div class="item  animated bounceInRight">
+			<span class="animated slideInLeft"><img alt="portfolio" src="images/testimonials/1.jpg" width="100" class="img-circle"></span>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+			<span>Canada</span>
+			</div>
+	</div> -->
+
+	<!-- Controls -->
+  	<!-- <a class="left arrow" href="#carousel-testimonials" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+  	<a class="right arrow" href="#carousel-testimonials" data-slide="next"><i class="fa fa-angle-right"></i></a> -->
+  	<!-- Controls -->
+	<!-- </div> -->
+
+	</div>	
+</div>
+</div>
+<!-- testimonials -->
+
+
+
+
+
+
+
+
+</div>
+
+
+<!-- contact -->
+<div id="contact" class="footer center spacer">
+
+			
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-offset-3 col-sm-6 contact-form">		
+			<h3>Contact</h3>
+			<p>I am available for Freelancing work and collaboration.</p>
+			<form  >
+			<input type="text" name="form_name" class="form-control" placeholder="Name" >
+			<input type="email"  name="form_email" class="form-control" placeholder="Email">
+			<textarea name="form_message" class="form-control" placeholder="Message" rows="5"></textarea>
+			<input type="submit"  name="Submit" class="btn btn-primary btn-lg" value="Submit">
+			</form>
+			</div>
+		</div>
+
+		
+	</div>
+</div>
+<!-- contact -->
+
+
+<a href="#top" class="toTop scroll"><i class="fa fa-angle-up"></i></a>
+
+		
+		<!-- gridloading script -->
+		<script src="assets/gridloading/js/modernizr.custom.js"></script>
+		<script src="assets/gridloading/js/masonry.pkgd.min.js"></script>
+		<script src="assets/gridloading/js/imagesloaded.js"></script>
+		<script src="assets/gridloading/js/classie.js"></script>
+		<script src="assets/gridloading/js/AnimOnScroll.js"></script>
+		<!-- gridloading script -->
+
+
+		<script src="assets/scripts.js"></script>
+
+
 </body>
 
 </html>
