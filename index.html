@@ -7,12 +7,12 @@
 		
 	
 
-	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.js"></script>
+	<script src="assets/js/jquery-3.5.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
 	
 
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/fontawesome/css/font-awesome.css">
 	
 
@@ -32,7 +32,7 @@
 		<div class="absolute-center">
 		<div class="row">
 			<div class="col-sm-7">
-				<h1 class="info animated fadeInDown"><a href="" class="logo">Hi,<br>I'm <u>Lucas Di Paola</u></a><br><b>I'm a Full Stack Web Developer</h1>
+				<h1 class="info animated fadeInDown"><a href="#" class="logo">Hi,<br>I'm <u>Lucas Di Paola</u></a><br><b>I'm a Full Stack Web Developer</h1>
 				<a href="#work" class="btn scroll animated bounceInUp">View My Work</a><a href="#contact" class="btn scroll animated bounceInDown">Contact</a>
 			</div>
 			<div class="col-sm-4 col-sm-offset-1">
@@ -69,26 +69,38 @@
 <h2 class="center">Work</h2>
 
 	<ul class="grid effect-2" id="grid">
-		<li><img alt="portfolio" src="images/grid-image/1.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span><span class="animated bounceIn" style="margin-top: 50px;"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View GitHub</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/2.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInDown"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/3.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInUp"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/4.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/5.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInDown"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/6.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/7.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><div class="card portfolio animated fadeInDown">
+			<img class="card-img-top" src="images/grid-image/budget-tracker.png" alt="Card image cap">
+			<div class="card-body">
+			  <h5 class="card-title">Budget tracker</h5>
+			  <p class="card-text">Progressive Web App for tracking your budget</p>
+			  <a href="https://github.com/ldipaola/PWA-Budget-Tracker" style="display: inline;" class="card-link">Github</a>
+			  <a href="https://secure-coast-48273.herokuapp.com/" style="display: inline;" class="card-link">Deployed</a>
+			</div>
+		  </div></li>
+		<li><div class="card portfolio animated fadeInDown">
+			<img class="card-img-top" src="images/grid-image/workout-tracker.png" alt="Card image cap">
+			<div class="card-body">
+			  <h5 class="card-title">Workout Tracker</h5>
+			  <p class="card-text">Simple app for tracking your workout</p>
+			  <a href="https://github.com/ldipaola/workout-tracker" style="display: inline;" class="card-link">Github</a>
+			  <a href="https://workout-tracker-ldp.herokuapp.com/" style="display: inline;" class="card-link">Deployed</a>
+			</div>
+		  </div></li>
+		<li><div class="card portfolio animated fadeInDown">
+			<img class="card-img-top" src="images/grid-image/eat-da-burger.png" alt="Card image cap">
+			<div class="card-body">
+			  <h5 class="card-title">Burger Logger</h5>
+			  <p class="card-text">A simple project made using MySQL, node, Express, Handlebars and a homemade ORM to demonstrate the Model View Controller (MVC) design pattern</p>
+			  <a href="https://github.com/ldipaola/burger-logger" style="display: inline;" class="card-link">Github</a>
+			  <a href="https://secure-coast-48273.herokuapp.com/" style="display: inline;" class="card-link">Deployed</a>
+			</div>
+		  </div></li>
+		<!-- <li><img alt="portfolio" src="images/grid-image/7.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
 		<li><img alt="portfolio" src="images/grid-image/1.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
 		<li><img alt="portfolio" src="images/grid-image/2.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInDown"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
 		<li><img alt="portfolio" src="images/grid-image/3.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInUp"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/4.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/5.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInDown"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/3.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInUp"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/4.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/5.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInDown"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/6.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/2.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInDown"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/3.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInUp"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/4.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
-		<li><img alt="portfolio" src="images/grid-image/5.jpg"><div class="overlay animated fadeIn"><span class="animated fadeInDown"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li>
+		<li><img alt="portfolio" src="images/grid-image/4.jpg"><div class="overlay animated fadeIn"><span class="animated bounceIn"><a href="http://www.thebootstrapthemes.com" target="_blank"><i class="fa fa-link"></i> View Website</a></span></div></li> -->
 	</ul>
 </div>
 
@@ -107,31 +119,31 @@
 	<div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
 
 	<div class="carousel-inner">	
-			<div class="item active animated bounceInRight">
+			<div class="carousel-item active animated bounceInRight">
 			<span class="animated slideInLeft"><img alt="portfolio" src="images/testimonials/html5.svg" width="175" height="175"></span>
 			</div>
-			<div class="item  animated bounceInRight">
+			<div class="carousel-item  animated bounceInRight">
 			<span class="animated slideInLeft"><img alt="portfolio" src="images/testimonials/Node.js_logo.svg" width="175" height="175"></span>
 			</div>
-			<div class="item  animated bounceInRight">
+			<div class="carousel-item  animated bounceInRight">
 			<span class="animated slideInLeft"><img alt="portfolio" src="images/testimonials/javascript-4.svg" width="175" height="175"></span>
 			</div>
-			<div class="item  animated bounceInRight">
+			<div class="carousel-item  animated bounceInRight">
 			<span class="animated slideInLeft"><img alt="portfolio" src="images/testimonials/bootstrap-4.svg" width="175" height="175"></span>
 			</div>
-			<div class="item  animated bounceInRight">
+			<div class="carousel-item  animated bounceInRight">
 			<span class="animated slideInLeft"><img alt="portfolio" src="images/testimonials/css3.svg" width="175" height="175"></span>
 			</div>
-			<div class="item  animated bounceInRight">
+			<div class="carousel-item  animated bounceInRight">
 			<span class="animated slideInLeft"><img alt="portfolio" src="images/testimonials/jquery-2.svg" width="175" height="175"></span>
 			</div>
-			<div class="item  animated bounceInRight">
+			<div class="carousel-item  animated bounceInRight">
 			<span class="animated slideInLeft"><img alt="portfolio" src="images/testimonials/mongodb.svg" width="175" height="175"></span>
 			</div>
-			<div class="item  animated bounceInRight">
+			<div class="carousel-item  animated bounceInRight">
 			<span class="animated slideInLeft"><img alt="portfolio" src="images/testimonials/mysql-7.svg" width="175" height="175"></span>
 			</div>
-			<div class="item  animated bounceInRight">
+			<div class="carousel-item  animated bounceInRight">
 			<span class="animated slideInLeft"><img alt="portfolio" src="images/testimonials/sequelize.svg" width="175" height="175"></span>
 			</div>
 	</div>
@@ -164,7 +176,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-offset-3 col-sm-6 contact-form">		
+			<div class="col-sm-offset-3 col-sm-6 contact-form mx-auto">		
 			<h3>Contact</h3>
 			<p>I am available for Freelancing work and collaboration.</p>
 			<form action="https://formspree.io/xvovpwed" method="POST">
